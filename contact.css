@@ -1,0 +1,384 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.row{
+width:100%;
+height:7vh;
+background-color:darkgray;
+display: flex;
+justify-content:space-between;
+padding-top: 18px;
+position: fixed;
+z-index: 2;
+}
+.right{
+width: 40%;
+display: flex;
+justify-content: space-around;
+
+
+}
+.left{
+width: 40%;
+display: flex;
+justify-content:space-around;
+
+}
+.I{
+color:darkblue;
+font-size: 3vh; 
+/* text-shadow: 0 10px 5px darkviolet; */
+}
+    a{
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    /* text-shadow: 0 10px 5px gold; */
+    
+}
+.menu123{
+        display: none;
+        /* position: relative; */
+        flex-direction: column;
+        position: absolute;
+        /* z-index: 4; */
+        width: 200px;
+        background-color: skyblue;
+        color: white;
+}
+.aboutimage{
+    width: 100%;
+    height: 100vh;
+    /* background: url("fff2.jpeg"); */
+
+}
+.aboutimage img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu123 a{
+padding-left: 10px;
+line-height: 1.5;
+}
+.I:hover .menu123{
+    display: block;
+}
+.x{
+    font-size: 5vh;
+    color: green;
+}
+
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+.subimage1{
+    position:absolute;
+    top: 87vh;
+    z-index: 1;
+    left: 23%;
+    font-size: 180%;
+    color:white;
+}
+.info{
+    display: flex;
+}
+.text{
+    width: 50%;
+    margin-left: 5%;
+}
+.photo{
+    width: 50%;
+    margin-left: 5%;
+}
+.photo img{
+    width: 100%;
+}
+.empty{
+    height: 6vh;
+    color: white;
+}
+.all{
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+
+
+.page7{
+    width: 100%;
+    height: 40vh;
+    background-color: lightcyan;
+}
+.page7 p{
+    margin-left: 40px;
+    padding-top: 80px;
+    color: brown;
+}
+.page7 p1{
+    margin-left: 40px;
+    font-size: 30px;
+    color: black;
+}
+.page7text{
+    height: 10vh;
+    width: 90%;
+    margin-left: 40px;
+}
+.page7text p3{
+    line-height: 1.5;
+    font-size: 17px;
+}
+.subpage7{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    background-color: gray;
+    /* justify-content: space-around; */
+    padding-top: 80px;
+}
+.subpage71 p{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.subpage72 input{
+    
+    height: 8vh;
+    width: 200%;
+    margin-left: 40px;
+    background-color: white;
+    
+}
+.subpage73 input{
+    height: 8vh;
+    width: 30%;
+    margin-left: 400px;
+}
+
+.contacts{
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subcontacts{
+    height: 70vh;
+    width: 90%;
+    background-color: blue;
+    background-image: url("https://wallpaperaccess.com/full/1685418.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+.locate{
+    display: flex;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.fa-solid{
+    color: darkgoldenrod;
+    margin-top: 40px;
+}
+.locate p{
+    color: white;
+}
+.contact1 p{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+.contact1 hr{
+    margin-left: 20px;
+    margin-right: 50px;
+    color: white;
+}
+.locate2{
+    font-size: 20px;
+    line-height: 1.8;
+    color: white;
+}
+            
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .row{
+        flex-direction: column;
+    }   
+    .I a{
+        font-size: x-small;
+    }
+    .right, .left{
+        width: 100%;
+    }
+
+    .aboutimage img {
+        width: 100%;
+        height: 100%;
+
+    }
+    .subimage1 {
+        position: absolute;
+        top: 40vh;
+        z-index: 1;
+        left: 23%;
+        font-size: 150%;
+        color: white;
+    }
+    .aboutimage{
+        width: 100%;
+        height: 80vh;
+        background-color: aqua;
+        
+    }
+    .empty {
+        height: 2vh;
+        color: white;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* height: 30vh; */
+        justify-content: center;
+        /* text-align: center; */
+        align-items: center;
+        height: 100%;
+        justify-content: space-around;
+    }
+    .text{
+
+        width: 90%;
+        justify-content: space-around;
+        height: 50%;
+    }
+    .photo {
+        width: 100%;
+        margin-left: 0;
+        /* height: 30vh;
+        background-color: blue; */
+        height: 50%;
+        background-color: black;
+    }
+    .map{
+        width: 100%;
+        height: 100%;
+    }
+    .all {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        text-align: center;
+        align-items: center;
+    }
+    .subpage71 p {
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        margin-left: 0;
+        /* margin-top: 150px; */
+    }
+    .subpage71{
+        height: 50%;
+        /* background-color: black; */
+    }
+
+    .subpage7 {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        width: 100%;
+        background-color: gray;
+        padding-top: 0;
+    }
+    .subpage72 input {
+        height: 8vh;
+        width: 100%;
+        margin-left: 0;
+        background-color: white;
+        /* justify-content: space-around; */
+    }
+    .subpage73 input {
+        height: 8vh;
+        width: 30%;
+        margin-left: 0px;
+        justify-content: center;
+        /* text-align: center; */
+        align-items: center;
+    }
+    .subpage73{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+    }
+    .subpage71,.subpage72{
+      height: 30%;
+    }
+    .subcontacts {
+        height: 100%;
+        width: 90%;
+        background-color: blue;
+        background-image: url(https://wallpaperaccess.com/full/1685418.jpg);
+        display: grid;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts {
+        height: 160vh;
+        width: 100%;
+        background-color: white;
+        /* display: flex;
+        justify-content: space-around; */
+    }
+    .subcontacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 90%;
+    }
+    .contact1 p {
+        margin-top: 0;
+        margin-left: 0;
+        font-size: 20px;
+        font-weight: 800;
+        color: white;
+        justify-content: center;
+        text-align: center;
+    }
+    .locate {
+        display: flex;
+        margin-left: 0;
+        font-size: 20px;
+        line-height: 1.8;
+
+    }
+    .fa-solid {
+        color: darkgoldenrod;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+}
+
+
+
+
